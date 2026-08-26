@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description"
         content="Ray D. Sameshima — physicist and educator working in mathematical physics, Feynman integrals, graph theory, thermodynamics, and physics education.">
 
@@ -58,17 +59,36 @@
       color: #555;
     }
 
-    .links {
+    .contact-row {
       margin-top: 0.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.1rem;
+      align-items: baseline;
     }
 
-    .links a {
-      margin-right: 1rem;
+    .contact-item {
+      white-space: nowrap;
     }
 
     .description {
       color: #444;
       margin-top: 0.1rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 1.5rem auto;
+      }
+
+      .contact-row {
+        display: block;
+      }
+
+      .contact-item {
+        display: block;
+        margin-bottom: 0.25rem;
+      }
     }
   </style>
 </head>
@@ -91,11 +111,19 @@
       New York City College of Technology, CUNY
     </p>
 
-    <p class="links">
-      <a href="mailto:rsameshi@nyit.edu">Email</a>
-      <a href="https://orcid.org/0009-0006-1556-2681">ORCID</a>
-      <!-- Add CV link here when ready -->
-    </p>
+    <div class="contact-row">
+      <span class="contact-item">
+        Email: rsameshi [at] nyit.edu
+      </span>
+
+      <span class="contact-item">
+        <a href="https://orcid.org/0009-0006-1556-2681">ORCID</a>
+      </span>
+
+      <span class="contact-item">
+        <a href="docs/CV.pdf">CV</a>
+      </span>
+    </div>
   </header>
 
 
@@ -109,6 +137,7 @@
         <a href="docs/LectureOnGraphTheory.html">
           <strong>Lectures on Graph Theory: Insights into Feynman Diagrams</strong>
         </a><br>
+
         <span class="description">
           Springer Nature, 2025. Graph-theoretic methods and their
           applications to the structure of Feynman integrals.
@@ -135,6 +164,7 @@
         <a href="docs/Writing_in_Physics_Courses.pdf">
           <strong>A Practical Guide to Writing in Physics Courses</strong>
         </a><br>
+
         <span class="description">
           A student guide to scientific communication, physics solutions,
           mathematical arguments, and laboratory reports.
@@ -145,6 +175,7 @@
         <a href="docs/Thermodynamics__A_La_Maniere_de_TASAKI.pdf">
           <strong>Thermodynamics: À la manière de Tasaki</strong>
         </a><br>
+
         <span class="description">
           Lecture notes on an operational and axiomatic approach to thermodynamics.
         </span>
@@ -154,6 +185,7 @@
         <a href="docs/Geometric_Algebra_and_Electromagnetism.pdf">
           <strong>Geometric Algebra and Electromagnetism</strong>
         </a><br>
+
         <span class="description">
           Expository notes on electromagnetic theory using geometric algebra.
         </span>
@@ -163,6 +195,7 @@
         <a href="docs/Jordan_Curve_Theorem.pdf">
           <strong>Jordan Curve Theorem</strong>
         </a><br>
+
         <span class="description">
           A self-contained study note on the Jordan curve theorem and its
           analytic and topological foundations.
@@ -173,6 +206,7 @@
         <a href="docs/Group_Theory_101.pdf">
           <strong>Group Theory 101</strong>
         </a><br>
+
         <span class="description">
           Introductory notes on groups and basic algebraic structures.
         </span>
@@ -182,6 +216,7 @@
         <a href="docs/2AmbivalentObject.pdf">
           <strong>An Object Sitting in Two Categories</strong>
         </a><br>
+
         <span class="description">
           A short categorical note on an object viewed through two mathematical structures.
         </span>
@@ -201,34 +236,5 @@
     </p>
   </section>
 
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-	<title>Ray D. Sameshima</title>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1>Ray D. Sameshima</h1>
-	<p>A physicist.<p>
-
-	<h2>Book(s)</h2>
-	<ul>
-		<li> <a href="docs/LectureOnGraphTheory.html">Lecture on Graph Theory</a>
-	</ul>
-
-	<h2>Notes</h2>
-	<ul>
-	
-		<li> <a href="docs/Group_Theory_101.pdf">Group_Theory_101</a>
-		<li> <a href="docs/Geometric_Algebra_and_Electromagnetism.pdf">Geometric Algebra and Electromagnetism</a>
-		<li> <a href="docs/Jordan_Curve_Theorem.pdf">Jordan Curve Theorem</a>
-
-		<li> <a href="docs/Writing_in_Physics_Courses.pdf">A Practical Guide to Writing in Physics Courses</a>
-
-		<li> <a href="docs/2AmbivalentObject.pdf">2: An Object Sitting in Two Categories</a>
-
-		<li><a href="docs/Thermodynamics__A_La_Maniere_de_TASAKI.pdf">Thermodynamics: A la Maniere de TASAKI</a>
-	</ul>
 </body>
 </html>
